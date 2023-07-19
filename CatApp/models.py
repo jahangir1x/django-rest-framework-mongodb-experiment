@@ -7,3 +7,6 @@ class CatShop(models.Model):
     price = models.FloatField()
     breed = models.CharField(max_length=64)
     description = models.TextField()
+
+    def __str__(self):
+        return self.name
