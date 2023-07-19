@@ -7,6 +7,7 @@ class CatShopSerializer(serializers.ModelSerializer):
     class Meta:
         model = CatShop
         fields = [
+            'id',
             'name',
             'price',
             'breed',
