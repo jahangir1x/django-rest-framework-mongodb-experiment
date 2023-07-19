@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+
+# CatShop model
+class CatShop(models.Model):
+    name = models.CharField(max_length=64)
+    price = models.FloatField()
+    breed = models.CharField(max_length=64)
+    description = models.TextField()
